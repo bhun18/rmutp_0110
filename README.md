@@ -1,3 +1,3 @@
 # Cyber Security
 
-Thanusphol Kruthong
+Thanusphol Kruthong (Bhun)
