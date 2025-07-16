@@ -3,7 +3,7 @@ services:
         image: postgres:latest
         container_name: my_db_thanusphol
         ports:
-        -  "65432:5432"
+          -  "65432:5432"
         environment:
           POSTGRES_USER: ${POSTGRES_USER}
           POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -11,9 +11,9 @@ services:
 
     app:
         image: prawee/strapi
-        container_name: my_app_thanusphol01
+        container_name: my_app_thanusphol
         ports:
-        - "8080:1337"
+          - "8080:1337"
         environment:
           DATABASE_CLIENT: ${DATABASE_CLIENT}
           DATABASE_NAME: ${DATABASE_NAME}
