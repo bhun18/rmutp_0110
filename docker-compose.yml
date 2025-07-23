@@ -11,15 +11,15 @@ services:
         volumes:
            - ./data:/var/lib/postgresql/data
     app:
-        image: prawee/strapi
-        container_name: my_app_thanusphol
-        ports:
-          - "8080:1337"
-        environment:
-          DATABASE_CLIENT: ${DATABASE_CLIENT}
-          DATABASE_NAME: ${DATABASE_NAME}
-          DATABASE_HOST: ${DATABASE_HOST}
-          DATABASE_PORT: ${DATABASE_PORT}
-          DATABASE_USERNAME: ${DATABASE_USERNAME}
-          DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-          DATABASE_SSL: false
+          image: prawee/strapi
+          container_name: my_app_thanusphol
+          ports:
+            - "8080:1337"
+          environment:
+            DATABASE_CLIENT: ${DATABASE_CLIENT}
+            DATABASE_NAME: ${DATABASE_NAME}
+            DATABASE_HOST: ${DATABASE_HOST}
+            DATABASE_PORT: ${DATABASE_PORT}
+            DATABASE_USERNAME: ${DATABASE_USERNAME}
+            DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+            DATABASE_SSL: false
